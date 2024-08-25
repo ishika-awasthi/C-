@@ -1,0 +1,16 @@
+#include <iostream>
+int main() {
+    int i, j, n;
+    std::cout << "Enter the number of rows: ";
+    std::cin >> n;
+    for (i = n; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            std::cout << "*";}
+        std::cout << "\n";}
+
+    for (i = 2; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            std::cout << "*"; }
+        std::cout << "\n";  }
+    return 0;
+}
