@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+    int orig, n, rev = 0, rem;
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+    orig = n;
+
+    while (n > 0) {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = n / 10;
+    }
+
+    if (orig == rev) {
+        std::cout << "The number is a palindrome" << std::endl;
+    } else {
+        std::cout << "The number is not a palindrome" << std::endl;
+    }
+
+    return 0;
+}
