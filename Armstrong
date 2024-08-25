@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    int n, orig, rem, sum = 0;
+    int dig = 0;
+
+    std::cout << "Enter a number: ";
+    std::cin >> n;
+    orig = n;
+    
+    for (int a = n; a > 0; a /= 10) {
+        dig++;
+    }
+    
+    while (n != 0) {
+        rem = n % 10;
+        sum += pow(rem, dig);
+        n /= 10;
+    }
+    
+    if (sum == orig) {
+        std::cout << orig << " is an Armstrong number" << std::endl;
+    } else {
+        std::cout << orig << " is not an Armstrong number" << std::endl;
+    }
+    
+    return 0;
+}
