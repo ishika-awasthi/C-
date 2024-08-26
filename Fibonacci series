@@ -1,0 +1,19 @@
+//fibbonacci series
+#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  std::cout<<"enter the limit: "<<endl;
+  std::cin>>n;
+  int f=0,s=1;
+  while (f <= n) {
+    cout << f;
+    f=s;
+    s=f+s;
+    if (f<=n) {
+        cout<<", ";
+    }
+  }
+
+  cout<<endl;
+  }
