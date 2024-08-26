@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  std::cout<<"enter a no. ";
+  std::cin>>n;
+  int f=1;
+  for(int i=n;i>=1;i--){
+    f=f*i;
+  }
+
+  std::cout<<"the factorial of "<<n<<":"<<f;
+
+
+
+
+
+  }
+
