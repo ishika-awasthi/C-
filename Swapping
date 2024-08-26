@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main() {
+    int a,b;
+    std::cout<<"enter a no.";
+    std::cin>>a;
+    std::cout<<"enter another no.";
+    std::cin>>b;
+    std::cout<<"before swapping: a="<<a<<"  b="<<b<<std::endl;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    std::cout<<"after swapping: a="<<a<<"  b="<<b;
+    return 0;}
