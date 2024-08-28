@@ -16,13 +16,16 @@ int main() {
     std::cin>>x;
     std::cout<<"enter index number: ";
     std::cin>>ind;
-    if (ind>=n){
-        std::cout<<"index out of range";}
-    else{
-        for(i=n;i>ind;i--){
-            a[i]=a[i-1]; 
-        a[ind]=x;}
-    for(i = 0; i <= n; i++) {
-        std::cout << a[i] << ", "; }
+    if (ind >= n){
+            std::cout << "Index out of range" << endl;}
+        else{
+            for(i = n; i > ind; i--) {
+                a[i] = a[i-1];}
+            a[ind] = x;
+            n++;
+            for(i = 0; i < n; i++) {
+                std::cout << a[i] << ", "; }
+            std::cout << endl;
+        }
+         return 0;
     }
-}
