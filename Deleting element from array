@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, a[100], i,x;
+    std::cout << "Enter the number of elements: ";
+    std::cin >> n;
+    std::cout << endl;
+    std::cout << "Enter elements: " << "\n";
+    for(i = 0; i < n; i++) {
+        cin >> a[i]; }
+    std::cout << "Elements are: " << "\n";
+    for(i = 0; i < n; i++) {
+        std::cout << a[i] << ", "; }
+    std::cout<<endl;
+    std::cout<<"Enter the index value of the element to be deleted: ";
+    std::cin>>x;
+    if (x<n){
+        for(i=x;i<n;i++){
+            a[i]=a[i+1];}}
+    else{
+        std::cout<<"index out of range";}
+    for(i = 0; i < n-1;i++) {
+        std::cout << a[i] << ", "; }
+}
