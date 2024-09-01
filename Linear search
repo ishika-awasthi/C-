@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, a[100],i;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    cout << endl;
+    cout << "Enter elements: " << "\n";  
+    for(i = 0; i < n; i++) {
+        cin >> a[i]; }
+    cout << "Elements are: " << "\n";
+    for(i = 0; i < n; i++) {
+        cout << a[i] << ", "; }
+    cout<<endl;
+    int x;
+    cout<<"Enter element to search: ";
+    cin>>x;
+    int index = -1;
+        for(i = 0; i < n; i++) {
+            if(a[i] == x) {
+                index = i;
+                break; } }
+         if(index != -1) {
+            cout << "Element found at index: "<<index<<endl;
+         }else
+         {cout << "Element not found." << endl; }
+         return 0; }
+    
