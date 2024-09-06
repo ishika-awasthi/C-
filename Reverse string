@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char s[100], reverse[100];
+    int length = 0;
+    cout<<"Enter a string: ";
+    cin>>s;
+    while (s[length] != '\0') {
+        length++; }
+    for (int i=0; i<length;i++) {
+        reverse[i] =s[length-i-1];}
+    reverse[length] = '\0'; 
+    cout << "Reversed string: " << reverse<< endl;
+    return 0;}
